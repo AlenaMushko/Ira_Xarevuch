@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body >
+    <!--heder-->
+    <header class="header ">
+      <div class="container header__container">
+        <!--mobail-->
+    
+        <div class="mobile ">
+          <ul class="address">
+            <li><a
+                href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D1%89%D0%B5,+12,+%D0%A2%D1%80%D1%83%D1%81%D0%BA%D0%B0%D0%B2%D0%B5%D1%86%D1%8C,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+82200/@49.2695176,23.4969868,17z/data=!3m1!4b1!4m5!3m4!1s0x473a49cabe632ce1:0x43a6b82c9ab719fa!8m2!3d49.2695176!4d23.4991755"
+                class="address__link">
+                <svg class="address__icon" width="18" height="14">
+                  <use href="./images/symbol-defs.svg#location"></use>
+                </svg>м.Трускавець </br> вул. Городище, 12</a></li>
+            <li class="address__item"> Санаторій "Молдова"</li>
+          </ul>
+    
+          <ul class="main__list">
+            <li class="main__item"><a class="main__link" href="">Плазмотерапія</a></li>
+            <li class="main__item"><a class="main__link" href="">Карбокситерапія</a></li>
+            <li class="main__item">
+              <button class="header__button-menu" type="button" data-menu-open>
+                <svg width="40" height="40" aria-label="переключає мобільне меню">
+                  <use class="icon-cross" href="./images/symbol-defs.svg#menu_40px"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="menu is-hidden" id="menu" data-menu>
+          <div class="container-mobile">
+            <div class="menu--top">
+              <button class="header__button-menu" type="button" data-menu-close>
+                <svg width="40" height="40" aria-label="переключає мобільне меню">
+                  <use class="icon-cross" href="./images/symbol-defs.svg#close_40px"></use>
+                </svg>
+              </button>
+    
+              <div class="work-time">
+                <a href="" class="work-time__link">
+                  <svg width="30" height="30">
+                    <use href="./images/symbol-defs.svg#clock"></use>
+                  </svg>
+                </a>
+                <h3 class="work-time__title">ГРАФІК РОБОТИ</h3>
+                <p class="work-time__text">Понеділок - П’ятниця 9<sup>00</sup>-15<sup>00</sup></p>
+                <p class="work-time__text">Субота 10<sup>00</sup>-12<sup>00</sup></p>
+              </div>
+            </div>
+    
+    
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="">Ціни</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Про нас</a></li>
+            </ul>
+    
+    
+            <ul class="sos">
+              <li class="sos__item">
+    
+                <a href="mailto:fedusivxarevuch@gmail.com" class="sos__mail">
+                  fedusivxarevuch @gmail.com</a>
+                <svg class="sos__img" width="30" height="30">
+                  <use href="./images/symbol-defs.svg#leter"></use>
+                </svg>
+              </li>
+    
+              <li class="sos__item">
+                <a href="tel:+38(093)7264528 " class="sos__tel">+38 (093) 726 45 28</a>
+    
+                <ul class="social">
+    
+    
+                  <li class="social__item">
+                    <a href="">
+                      <svg class="social__whatsApp" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#whatsApp-viber"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="">
+                      <svg class="social__telegram" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="">
+                      <svg class="social__viber" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#whatsApp-viber"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="">
+                      <svg class="social__instagram" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+    
+              </li>
+            </ul>
+    
+          </div>
+        </div>
+        <!--header-tablet-->
+    
+        <div class="header__tablet">
+          <ul class="address">
+            <li><a
+                href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D1%89%D0%B5,+12,+%D0%A2%D1%80%D1%83%D1%81%D0%BA%D0%B0%D0%B2%D0%B5%D1%86%D1%8C,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+82200/@49.2695176,23.4969868,17z/data=!3m1!4b1!4m5!3m4!1s0x473a49cabe632ce1:0x43a6b82c9ab719fa!8m2!3d49.2695176!4d23.4991755"
+                class="address__link">
+                <svg class="address__icon" width="18" height="14">
+                  <use href="./images/symbol-defs.svg#location"></use>
+                </svg>м.Трускавець </br> вул. Городище, 12</a></li>
+            <li class="address__item"> Санаторій "Молдова"</li>
+          </ul>
+    
+          <div class="work-time">
+            <a href="" class="work-time__link">
+              <svg width="30" height="30">
+                <use href="./images/symbol-defs.svg#clock"></use>
+              </svg>
+            </a>
+            <h3 class="work-time__title">ГРАФІК РОБОТИ</h3>
+            <p class="work-time__text">Понеділок - П’ятниця 9<sup>00</sup>-15<sup>00</sup></p>
+            <p class="work-time__text">Субота 10<sup>00</sup>-12<sup>00</sup></p>
+          </div>
+    
+          <div class="header-item">
+            <a href="#" class="hero__logo ">
+              <img src="./images/logo-min.jpg" alt=" медичний знак" width="120" height="130" />
+            </a>
+          </div>
+    
+          <ul class="sos">
+            <li class="sos__item">
+    
+              <a href="mailto:fedusivxarevuch@gmail.com" class="sos__mail">
+                fedusivxarevuch@gmail.com</a>
+              <svg class="sos__img" width="25" height="25">
+                <use href="./images/symbol-defs.svg#leter"></use>
+              </svg>
+            </li>
+    
+            <li class="sos__item">
+              <a href="tel:+38(093)7264528 " class="sos__tel">+38 (093) 726 45 28</a>
+    
+              <ul class="social">
+    
+    
+                <li class="social__item">
+                  <a href="">
+                    <svg class="social__whatsApp" width="30" height="30">
+                      <use href="./images/symbol-defs.svg#whatsApp-viber"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="">
+                    <svg class="social__telegram" width="30" height="30">
+                      <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="">
+                    <svg class="social__viber" width="30" height="30">
+                      <use href="./images/symbol-defs.svg#whatsApp-viber"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="">
+                    <svg class="social__instagram" width="30" height="30">
+                      <use href="./images/symbol-defs.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+    
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+  <main>
+<!--tablet-constanta-->
+<section class="section tablet-constanta">
+  <div class="container">
+    <ul class="tablet-constanta__list">
+      <li class="tablet-constanta__item"><a class="tablet-constanta__link--current"
+          href="./plasma-therapy.html">Плазмотерапія</a></li>
+
+      <li class="tablet-constanta__item"><a class="tablet-constanta__link" href="./index.html">Про нас</a></li>
+      <li class="tablet-constanta__item"><a class="tablet-constanta__link"
+          href="./carboxy-therapy.html">Карбокситерапія</a></li>
+    </ul>
+    <ul class="tablet-constanta__list--detailed">
+      <li>Суглоби</li>
+      <li>Хребет</li>
+      <li>Естетична косметологія</li>
+      <li>Урологія</li>
+      <li>Псоріаз</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section ">
+  <div class="container">
+
+
+
+  </div>
+</section>
+Результати і ефективність методу
+Результат після курсу лікування, а він становить зазвичай 5-6 сеансів , буде помітний не відразу. Треба почекати
+8-10
+днів, щоб введена плазма почала діяти.
+
+В результаті шкіра помітно світлішає, зморшки стають менш помітними, а в окремих випадках зникають зовсім, вугровий
+висип зникає.
+
+Позитивний результат зазвичай тримається мінімум 1,5-2 роки , може й більше. При веденні здорового способу життя та
+проведенні додаткових підтримують методів догляду за шкірою обличчя результат може потриматися до 5-6 років. Після
+чого
+курс лікування можна повторити.
+
+<ul class="plasma-therapy__list">
+  <li class="plasma-therapy__item">Протипокази до плазмотерапії:</li>
+  <li class="plasma-therapy__item"></li>
+  <li class="plasma-therapy__item">будь-який вид гепатиту, СНІДі тощо;</li>
+  <li class="plasma-therapy__item">період вагітності та годування грудьми;</li>
+  <li class="plasma-therapy__item">гострі інфекційні захворювання, нещодавно
+    перенесена температура понад 37,5;</li>
+  <li class="plasma-therapy__item">вживання антибіотиків, систематичний прийом
+    антикоагулянтів, кортикостероїдів;</li>
+  <li class="plasma-therapy__item">захворювання крові;</li>
+  <li class="plasma-therapy__item">новоутворення.</li>
+
+</ul>
+    
+  </main>
+
+<footer>
+
+</footer>
+
+  <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
+

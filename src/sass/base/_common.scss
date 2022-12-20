@@ -1,0 +1,32 @@
+body {
+  color: $primery-color;
+  font-family: $main-font;
+  font-weight: 400;
+}
+
+.body.modal-open{
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-img {
+  text-decoration: none;
+}
+
+h2{
+  @include font (18px, 1.2, 700, 0.03em);
+    color: $primery-color;
+}
+
+.text__span {
+  color: $text-title-color;
+}
+
+.tablet-constanta__link--current{
+color: #d81272;
+    font-size: 24px;
+}
+

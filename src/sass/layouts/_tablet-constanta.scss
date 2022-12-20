@@ -1,0 +1,50 @@
+/*------------------------tablet-constanta*/
+.section.tablet-constanta {
+  @media screen and (max-width:767px) {
+      display: none;
+    }
+
+  @media screen and(min-width:768px) {
+   
+    background-color: $background-color-pink-lite;
+  width: 100vw;
+  border-bottom: 4px solid #ed8dbb;
+   
+  }
+}
+
+.tablet-constanta__list {
+   display: flex;
+   gap: 80px;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+}
+
+.tablet-constanta__link{
+    @include font (18px, 1.2, 500, 0.03em);
+    color:$background-darc-color;
+    transition: color $transform, 
+              background-color $transform, 
+             
+}
+
+.tablet-constanta__link:hover,
+.tablet-constanta__link:focus{
+  content: "";
+  width: 100%;
+  height: 12px;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: rgba(65,65,77, 0.5);
+  color: white;
+}
+
+.tablet-constanta__list--detailed{
+  @include font (18px, 1.2, 400, 0.03em);
+  color: $background-color-grey-darc;
+  display: flex;
+      justify-content: center;
+      gap: 30px;
+      
+}
+

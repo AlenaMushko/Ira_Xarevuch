@@ -1,0 +1,36 @@
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+
+  transition: background-color $transform;
+
+  &:hover,
+  &:focus {
+    background-color: $accend-color;
+  }
+}
+
+.social__icon {
+  transition: fill $transform;
+
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: $title-color;
+  }
+}

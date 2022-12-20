@@ -1,0 +1,85 @@
+/*-------------------------plasma-therapy*/
+.plasma-therapy{
+  @include font (14px, 1.2, 400, 0.03em);
+  color: $primery-color;
+}
+
+.plasma-therapy__span {
+  color:$text-title-color;
+}
+
+.plasma-therapy__wrap{
+  @media screen and (min-width:768px) {
+  display: flex;
+  gap: 16px;  
+  }
+  
+}
+
+.plasma-therapy__img{
+  margin-left: auto;
+    margin-right: auto;
+  @media screen and (min-width:768px){
+    width: calc(50% - 8px) ;
+  }
+  
+}
+
+.plasma-therapy__about{
+  @media screen and (min-width:768px){
+     width: calc(50% - 8px);
+  }
+ 
+}
+.plasma-therapy__list .plasma-therapy__item + .plasma-therapy__item{
+margin-bottom: 12px;
+}
+
+.plasma-therapy__item:first-child{
+  @include font (18px, 1.7, 400, 0.03em);
+    color:$text-title-color;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.plasma-therapy__item:nth-child(2){
+  @include font (18px, 1.2, 400, 0.03em);
+    color: $background-darc-color;
+    text-indent: 24px;
+  }
+
+.plasma-therapy__item:nth-child(n+3)::before{
+content: '';
+display: inline-block;
+width: 14px;
+height: 14px;
+background-color: $text-title-color;
+color: $text-title-color;
+border: 2px solid black;
+transform: rotate(45deg);
+margin-right: 8px;
+}
+
+.go-home {
+  top: 85%;
+  right: 0px;
+  position: fixed;
+  background-color: transparent;
+  border: none;
+}
+
+.go-home .icon {
+  width: 50px;
+  display: inline-flex;
+  fill: $background-color-pink-darc;
+  transition: box-shadow 250ms linear, transform 250ms ease-in-out;
+}
+
+.go-home .icon:hover {
+  fill: #d81272;
+}
+
+.is-hidden {
+  display: none;
+}

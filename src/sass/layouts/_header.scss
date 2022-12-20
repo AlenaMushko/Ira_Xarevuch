@@ -1,0 +1,45 @@
+/*---------------------------header*/
+
+.header__tablet{
+  display: none;
+ @media screen and(min-width:768px) {
+    display: flex;
+    padding: 24px 0;
+    
+  @include font (14px, 1.14, 500, 0.02em);  
+
+    
+  } 
+  
+}
+
+.header__tablet{
+  background-color: #fff;
+}
+
+.header__tablet .work-time {
+  position: relative;
+}
+
+.header__tablet .work-time__link{
+  position: absolute;
+}
+
+
+
+.header-item{
+  @media screen and(min-width:768px){
+     flex-grow: 5;
+     margin: 6px 0 0 6px;
+  }
+    @media screen and(min-width:1200px) {
+    margin:0 180px ;
+    }
+ 
+}
+
+.social__item{
+  width: 32px;
+  height: 32px;
+
+}

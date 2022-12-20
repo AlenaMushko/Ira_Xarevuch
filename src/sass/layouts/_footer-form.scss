@@ -1,0 +1,129 @@
+/*------------------------------footer-form*/
+.footer__footer-form {
+
+@media screen and (max-width:1199px) {
+        width: 100%;
+  }
+
+
+
+    @media screen and (min-width:1200px) {
+      margin-left: 93px;
+    }
+ 
+}
+
+.footer-form {
+@media screen and (max-width:1199px) {
+    
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer__title{
+  @include font (16px, 1.25, $weight: 400, $spacing: 0.03em);
+color: $title-color;
+margin-bottom: 16px;
+text-align: center;
+}
+
+    .footer-form__email {
+    display: flex;
+    position: relative;
+
+    @media screen and (max-width:1199px) {
+      
+        display: flex;
+        flex-direction: column;
+              }
+  }
+
+.footer-form__wrap{
+  position: relative;
+
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+     margin-left: 166px;
+  
+    }
+}
+
+ .footer-form__iput {
+    background-color: transparent;
+    border: 1px solid #ED8DBB;
+    border-radius: 4px;
+outline: none;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+ 
+    font: inherit;
+    font-family: 'Roboto';
+    @include font (16px, 1.25, $weight: 400, $spacing: 0.03em);
+    color: $title-color;
+
+    @media screen and (max-width:767px) {
+         width: 100%;
+      }
+
+@media screen and (min-width: 768px) {
+    min-width: 450px;
+ 
+  }
+
+@media screen and (min-width: 1200px) {
+  min-width: 358px;
+  margin-right: 12px;
+}
+
+    &:hover {
+      border-color: #2196f3;
+    }
+  }
+
+ .footer-form__label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+
+    transform: translateY(-50%);
+    @include font (16px, 1.25, $weight: 400, $spacing: 0.03em);
+    font: inherit;
+    font-family: 'Roboto';
+        color: $background-color-pink-lite;
+    transition: transform $transform;
+
+ 
+
+    .footer-form__iput:focus + &,
+    .footer-form__iput:not(:placeholder-shown) + & {
+      transform: translate(-16px, -46px);
+    }
+  }
+
+    .footer-form__button {
+      position: relative;
+    @extend .button;
+min-width: 160px;
+color: $accent-color-milk;
+
+    @media screen and (max-width:1199px) {
+        margin-top: 20px; 
+         margin-left: auto;
+  margin-right: auto;
+      }
+  }
+
+    .footer-form__icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    fill: $title-color;
+  }
+

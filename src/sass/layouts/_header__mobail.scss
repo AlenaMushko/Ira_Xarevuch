@@ -1,0 +1,354 @@
+/*-------------header__mobile*/
+.header {
+  background-color: $background-color-pink-lite;
+    width: 100vw;
+    border-bottom: 1px solid #ed8dbb;
+ 
+    @media screen and (min-width: 768px){
+        border-bottom:none;
+          background-color: white;
+          width: 100vw;
+    }
+
+}
+
+.mobile {
+  display: none;
+
+  @media screen and (max-width: 767px){
+    display: flex;
+    padding: 8px 0;
+  display: flex;
+  gap: 4px;
+  justify-content: space-between; 
+  }
+  
+ 
+}
+
+.address__item,
+.address__link,
+.main__link {
+  @include font(12px, 1.14, 400, 0.02em);
+  color: rgba(23, 26, 36, 0.8);
+
+  @media screen and(min-width:768px) { 
+      @include font (14px, 1.14, 500, 0.02em);
+  }
+  
+}
+
+.address__item{
+    font-size: 18px;
+    text-align: center;
+}
+
+.address__link {
+  content: '';
+  fill: #d81272;
+
+  transition: color $transform;
+}
+
+.address__link:hover,
+.address__link:focus{
+  color:$background-color-pink-darc;
+}
+  
+
+
+.address__item {
+  margin-top: 8px;
+  padding: 8px;
+  max-width: 150px;
+  border: 1px solid #d81272;
+  border-radius: 7px;
+}
+
+.main__item:first-child {
+  margin-bottom: 8px;
+}
+
+.header__button-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+.main__list .header__button-menu {
+  transform: translateX(100%);
+}
+
+.menu.is-hidden {
+  display: none;
+}
+
+.menu {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 21px 25px 48px 40px;
+
+    background: $background-color-grey-lite;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    > .container-mobile {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+   .work-time .menu--bottom {
+
+       display: block;
+       margin-left: auto;
+   }
+
+   .menu--bottom{
+       bottom: 0;
+   }
+
+   @media screen and (min-width: 768px) {
+       display: flex;
+
+       justify-content: space-between;
+   }
+
+   @media screen and(min-width:768px) {
+       display: none;
+   }
+}
+
+.menu .header__button-menu {
+  position: absolute;
+  top: 22px;
+  right: 26px;
+}
+
+.work-time {
+  content: '';
+  display: block;
+  padding: 12px;
+  max-width: 400px;
+  max-height: 600px;
+  box-shadow: 0 15px 10px #29292b;
+
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and(min-width:768px) {
+      padding: 6px;
+        max-width: 300px;
+        max-height: 85px;
+        margin: 0;
+        margin-left: 8px;
+    }
+
+        @media screen and(min-width:1200px) {
+          padding: 6px;
+          max-width: 300px;
+          max-height: 85px;
+          margin: 0;
+          margin-left: 70px;
+        }
+}
+
+.work-time::after {
+  transform: rotate(-3deg);
+  right: 10px;
+  left: auto;
+}
+
+
+.work-time__title {
+  @include font(24px, 1.18, 700, $spacing: 0.03em);
+  text-align: center;
+  color: $primery-color;
+  margin-bottom: 8px;
+
+  @media screen and(min-width:768px) {
+      @include font (14px, 1.14, 500, 0.02em);
+     padding: 4px;
+    }
+}
+
+.work-time__text {
+  margin-top: 8px;
+  color: #656577;
+  @include font(24px, 1.71, 500, $spacing: 0.03em);
+
+  @media screen and(min-width:768px) {
+      @include font (14px, 1.14, 500, 0.02em);
+    }
+}
+
+.work-time__text:last-child {
+  text-align: center;
+}
+
+
+.menu__list {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.menu__link {
+  @include font(40px, 1.18, 700, 0.02em);
+  text-align: center;
+  text-shadow:0 5px 5px  #0c0cd3;
+  color: rgba(01, 01, 11, 0.7);
+}
+
+.sos__mail{
+@include font(34px, 1.18, 500, 0.02em);
+    text-align: center;
+    color: rgba(01, 01, 11, 0.7);
+transition: color $transform;
+    @media screen and(min-width:768px) {
+        @include font (14px, 1.14, 500, 0.02em);
+        
+      }
+}
+
+.sos__tel{
+    @include font(28px, 1.2, 700, 0.03em);
+        text-align: center;
+        color: rgba(01, 01, 11, 1);
+        margin-bottom: 8px;
+transition: color $transform;
+        @media screen and(min-width:768px) {
+            @include font (20px, 1.14, 500, 0.02em);
+          }
+}
+
+.sos__item{
+    display: flex;
+        flex-direction: column;
+            align-items: center;
+}
+.sos__item:first-child{
+  margin-bottom: 30px; 
+  @media screen and(min-width:768px){
+    margin-bottom: 10px;
+  flex-direction: row-reverse;
+  }
+}
+
+.sos__mail:hover,
+.sos__mail:focus{
+ color: $background-color-pink-darc;
+}
+
+.sos__tel:hover,
+.sos__tel:focus {
+  color:$background-color-pink-darc;
+}
+
+.sos__item:hover,
+.sos__item:focus{
+  fill: $background-color-pink-darc;
+}
+
+.sos__img{
+  margin-right: 12px;
+}
+
+.social{ 
+    gap: 30px;
+
+      @media screen and(min-width:768px) {
+          gap: 12px;
+        }
+}
+
+
+.social__instagram {
+  content: '';
+  width: 42px;
+  height: 42px;
+  border: transparent;
+  border-radius: 50%;
+  // box-shadow: 0px 0px 8px 1px rgba(24, 41, 66, 0.88);
+    fill: white;
+ background-image: linear-gradient(
+  to top right,
+  rgb(230, 202, 47) 20%,
+rgb(230, 47, 71) 50%,
+rgb(230, 47, 190) );
+
+border:1.5px solid tomato;
+
+  @media screen and(min-width:768px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+
+.social__whatsApp {
+  //  box-shadow: 0px 0px 8px 1px rgba(24, 41, 66, 0.88);
+    content: '';
+      width: 42px;
+      height: 42px;
+      border: transparent;
+      border-radius: 50%;
+    fill: white;
+    background-color: rgb(41, 212, 56);
+    border: 1.5px solid rgb(41, 212, 56);
+   
+    @media screen and(min-width:768px) {
+        width: 32px;
+        height: 32px;
+      }
+}
+
+.social__telegram {
+  content: '';
+    width: 42px;
+    height: 42px;
+    border: transparent;
+    border-radius: 50%;
+fill: rgb(115, 187, 245);
+// box-shadow: 0px 0px 8px 1px rgba(24, 41, 66, 0.88);
+   color: white;
+
+  // border: 1.5px solid rgb(115, 187, 245);
+ 
+    @media screen and(min-width:768px) {
+        width: 32px;
+        height: 32px;
+      }
+}
+
+.social__viber {
+  content: '';
+    width: 42px;
+    height: 42px;
+    border: transparent;
+    border-radius: 50%;
+    fill: rgb(95, 32, 240);
+    //  box-shadow: 0px 0px 8px 1px rgba(24, 41, 66, 0.88);
+      border: 1px solid rgb(95, 32, 240);
+     @media screen and(min-width:768px) {
+          width: 32px;
+          height: 32px;
+        }
+}
+
+
