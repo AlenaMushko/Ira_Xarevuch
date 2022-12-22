@@ -260,11 +260,6 @@ transition: color $transform;
   color:$background-color-pink-darc;
 }
 
-.sos__item:hover,
-.sos__item:focus{
-  fill: $background-color-pink-darc;
-}
-
 .sos__img{
   margin-right: 12px;
 }
@@ -284,13 +279,13 @@ transition: color $transform;
   height: 42px;
   border: transparent;
   border-radius: 50%;
-  // box-shadow: 0px 0px 8px 1px rgba(24, 41, 66, 0.88);
     fill: white;
  background-image: linear-gradient(
   to top right,
   rgb(230, 202, 47) 20%,
 rgb(230, 47, 71) 50%,
 rgb(230, 47, 190) );
+
 
 border:1.5px solid tomato;
 
@@ -300,9 +295,19 @@ border:1.5px solid tomato;
     }
   }
 
+.social__instagram:hover,
+.social__instagram:focus,
+.social__whatsApp:hover,
+.social__whatsApp:focus,
+ .social__viber:hover,
+ .social__viber:focus,
+ .social__telegram:hover,
+ .social__telegram:focus{
+  scale: 1.3;
+}
 
 .social__whatsApp {
-  //  box-shadow: 0px 0px 8px 1px rgba(24, 41, 66, 0.88);
+    fill: white;
     content: '';
       width: 42px;
       height: 42px;
@@ -325,11 +330,8 @@ border:1.5px solid tomato;
     border: transparent;
     border-radius: 50%;
 fill: rgb(115, 187, 245);
-// box-shadow: 0px 0px 8px 1px rgba(24, 41, 66, 0.88);
-   color: white;
+background-color: white;
 
-  // border: 1.5px solid rgb(115, 187, 245);
- 
     @media screen and(min-width:768px) {
         width: 32px;
         height: 32px;
@@ -342,6 +344,7 @@ fill: rgb(115, 187, 245);
     height: 42px;
     border: transparent;
     border-radius: 50%;
+    background-color: white;
     fill: rgb(95, 32, 240);
     //  box-shadow: 0px 0px 8px 1px rgba(24, 41, 66, 0.88);
       border: 1px solid rgb(95, 32, 240);

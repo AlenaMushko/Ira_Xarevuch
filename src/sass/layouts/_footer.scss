@@ -1,14 +1,12 @@
 /*-----------------------footer*/
 footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 20px 0;
 color: $title-color;
   background-color: rgba(65, 65, 77, 0.8);
   width: 100vw;
 }
 
 .footer .container {
-  
   flex-direction: column;
   align-content: center;
   align-items: baseline;
@@ -20,7 +18,7 @@ color: $title-color;
 }
 
 .footer__wrap{
- margin-bottom: 60px;
+ margin-bottom: 20px;
 
   @media screen and (min-width:768px){
      display: flex;
@@ -49,7 +47,7 @@ display: flex;
 }
 
 .contacts {
- margin-bottom: 60px;
+ margin: 40px;
 
    
   @media screen and (min-width:1200){
@@ -60,7 +58,6 @@ display: flex;
 
 
 .footer__address {
-  margin-top: 20px;
   display: flex;
     justify-content: center;
 }
@@ -84,7 +81,7 @@ color: $title-color;
 .footer__footer-soc {
 
   @media screen and (max-width:767px) {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
 
 
