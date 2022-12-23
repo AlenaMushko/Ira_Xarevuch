@@ -1,26 +1,25 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+showSlidesSecond(slideIndex);
 
 let prev = document.querySelector ('.prev');
 let next = document.querySelector ('.next');
 
 next.addEventListener ("click", function () {
-  showSlides(slideIndex += 1);
+  showSlidesSecond(slideIndex += 1);
   makeTimer();//перестворюємо інтервал, якщо відбувається клік по стрілці
 });
 
 prev.addEventListener ("click", function () {
-  showSlides(slideIndex -= 1);
+  showSlidesSecond(slideIndex -= 1);
   makeTimer();//перестворюємо інтервал, якщо відбувається клік по стрілці
 });
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlidesSecond(slideIndex = n);
 }
-
-
-function showSlides(n) {
-    let slides = document. querySelectorAll(".gallery__item");
+ 
+function showSlidesSecond(n) {
+    let slides = document. querySelectorAll(".gallery__item-2");
     if (n > slides.length) {
       slideIndex = 1;
     }
@@ -32,7 +31,7 @@ function showSlides(n) {
         slide.style.display = "none";
     }
     slides[slideIndex - 1].style.display = "flex";    
-}
+  }
 
 let timer = 0;
  makeTimer(); //створюємо інтервал
@@ -40,6 +39,6 @@ let timer = 0;
     clearInterval(timer) //чистимо інтервал
     timer = setInterval(function(){
       slideIndex++;
-      showSlides(slideIndex);
+      showSlidesSecond(slideIndex);
     },5000);
   }
