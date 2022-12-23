@@ -1,0 +1,2 @@
+let e=1;l(e);let t=document.querySelector(".prev");function l(t){let l=document.querySelectorAll(".gallery__item");t>l.length&&(e=1),t<1&&(e=l.length);for(let e of l)e.style.display="none";l[e-1].style.display="flex"}document.querySelector(".next").addEventListener("click",(function(){l(e+=1),c()})),t.addEventListener("click",(function(){l(e-=1),c()}));let n=0;function c(){clearInterval(n),n=setInterval((function(){e++,l(e)}),5e3)}c();
+//# sourceMappingURL=index.1096b9b9.js.map
