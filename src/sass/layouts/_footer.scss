@@ -1,6 +1,6 @@
 /*-----------------------footer*/
 footer {
-  padding: 30px 0;
+  padding: 40px 0;
 color: $title-color;
   background-color: rgba(65, 65, 77, 0.8);
   width: 100vw;
@@ -24,12 +24,9 @@ color: $title-color;
      display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: baseline;
+      align-items: stretch;
      }
 
-@media screen and (min-width:768px) and (max-width:1199px){
-  margin-bottom: 60px;
-}
 
 @media screen and (min-width:1200px){
 flex-grow: 1;
@@ -78,7 +75,7 @@ margin-top: 20px;
 
 
 .footer__footer-soc {
-
+    
   @media screen and (max-width:767px) {
       margin-bottom: 40px;
     }
